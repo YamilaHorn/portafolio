@@ -274,6 +274,7 @@ html{
     top: 0;
     left: 0;
     height: 8px;
+    transition: width 0.5s ease-in-out;
 }
 .skills .skill .barra-skill span{
     position: absolute;
@@ -290,7 +291,7 @@ html{
 /* Estas clases se agregaran dinamicamente mediante javascript */
 .skills .skill .javascript{
     width: 0%;
-    animation: 2s javascript forwards;
+    animation: 2s Javascript forwards;
 }
 @keyframes javascript {
     0%{width: 0%;}
@@ -310,7 +311,7 @@ html{
     width: 0%;
     animation: 2s photoshop forwards;
 }
-@keyframes photoshop {
+@keyframes Photoshop {
     0%{width: 0%;}
     100%{width: 95%;}
 }
@@ -453,6 +454,7 @@ html{
 }
 .contacto .fila{
     display: flex;
+    justify-content: center;
 }
 .contacto .col{
     width: 50%;
@@ -556,6 +558,8 @@ footer .arriba{
     line-height: 50px;
     font-size: 18px;
 }
+
+
 /* SECCION RESPONSIVE */
 @media screen and (max-width:980px){
     nav{
