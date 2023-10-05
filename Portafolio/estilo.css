@@ -183,6 +183,7 @@ html{
     display: flex;
     flex-wrap: wrap;
 }
+
 .sobremi .fila .col .contenedor-intereses .interes{
     width: 100px;
     height: 100px;
@@ -194,6 +195,7 @@ html{
     align-items: center;
     justify-content: center;
     transition: .3s;
+
 }.sobremi .fila .col .contenedor-intereses .interes:hover{
     background-color: #1CB698;
 }
@@ -242,7 +244,6 @@ html{
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
-
 }
 .skills .fila{
     display: flex;
@@ -288,51 +289,52 @@ html{
     right: -15px;
     font-size: 14px;
 }
+
+.prueba {
+    width: 100px;
+    height: 100px;
+    background-color: #252A2E;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    transition: .3s; 
+    font-size: 50px;
+    cursor: pointer;
+    position: relative;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+}
+
+.prueba:hover::before {
+    content: attr(data-name); 
+    position: absolute;
+    bottom: -5px; 
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: white;
+}
+
+.prueba:hover {
+    transform: translateY(-10px);
+}
+
+.prueba .fila .col {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.col-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
 /* Estas clases se agregaran dinamicamente mediante javascript */
-.skills .skill .javascript{
-    width: 0%;
-    animation: 2s Javascript forwards;
-}
-@keyframes javascript {
-    0%{width: 0%;}
-    100%{width: 75%;}
-}
 
-.skills .skill .htmlcss{
-    width: 0%;
-    animation: 2s htmlcss forwards;
-}
-@keyframes htmlcss {
-    0%{width: 0%;}
-    100%{width: 89%;}
-}
-
-.skills .skill .photoshop{
-    width: 0%;
-    animation: 2s photoshop forwards;
-}
-@keyframes Photoshop {
-    0%{width: 0%;}
-    100%{width: 95%;}
-}
-
-.skills .skill .wordpress{
-    width: 0%;
-    animation: 2s wordpress forwards;
-}
-@keyframes wordpress {
-    0%{width: 0%;}
-    100%{width: 81%;}
-}
-
-.skills .skill .drupal{
-    width: 0%;
-    animation: 2s drupal forwards;
-}
-@keyframes drupal {
-    0%{width: 0%;}
-    100%{width: 55%;}
-}
 
 .skills .skill .comunicacion{
     width: 0%;
@@ -349,7 +351,7 @@ html{
 }
 @keyframes trabajo {
     0%{width: 0%;}
-    100%{width: 70%;}
+    100%{width: 85%;}
 }
 
 .skills .skill .creatividad{
@@ -358,7 +360,7 @@ html{
 }
 @keyframes creatividad {
     0%{width: 0%;}
-    100%{width: 99%;}
+    100%{width: 90%;}
 }
 
 .skills .skill .dedicacion{
@@ -367,7 +369,7 @@ html{
 }
 @keyframes dedicacion {
     0%{width: 0%;}
-    100%{width: 65%;}
+    100%{width: 99%;}
 }
 
 .skills .skill .proyect{
@@ -376,7 +378,7 @@ html{
 }
 @keyframes proyect {
     0%{width: 0%;}
-    100%{width: 94%;}
+    100%{width: 70%;}
 }
 /* SECCION PORTFOLIO */
 .portfolio{
