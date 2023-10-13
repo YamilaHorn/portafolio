@@ -14,12 +14,15 @@ html{
 /*MENU*/
 
 .contenedor-header {
-    background: #1e2326;
+    background:rgba(30, 35, 38, 0.5);
     position: fixed;
     width: 100%;
     top: 0;
     left:0;
     z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contenedor-header header {
@@ -80,20 +83,16 @@ html{
 
 .inicio .contenido-banner{
     padding: 20px;
-    background-color: #1e2326;
     max-width: 330px;
     margin: auto;
     text-align: center;
     border-radius: 50px;
-    margin-bottom: 5px;
+    
 }
 .inicio .contenido-banner img{
-    margin-top: 50px;
-    border: 5px solid #1CB698;
     display: block;
     width: 60%;
     margin: auto;
-    border-radius: 100%;
 }
 
 .inicio .contenido-banner h1{
@@ -146,63 +145,12 @@ html{
     line-height: 22px;
     margin-bottom: 20px;
 }
-.sobremi .contenido-seccion p span{
+.sobremi .contenido-seccion .fila .col p span{
     color: #1CB698;
     font-weight: bold;
-}
-.sobremi .fila{
     display: flex;
-}
-.sobremi .fila .col
-{
-    width: 50%;
-}
-.sobremi .fila .col h3{
-    font-size: 28px;
-    font-family: 'Righteous';
-    margin-bottom: 25px;
-}
-.sobremi .fila .col ul{
-    list-style: none;
-}
-.sobremi .fila .col ul li{
-    margin: 12px 0;
-}
-.sobremi .fila .col ul li strong{
-    display: inline-block;
-    color: #1CB698;
-    width: 130px;
-}
-.sobremi .fila .col ul li span{
-    background-color: #1CB698;
-    padding: 3px;
-    font-weight: bold;
-    border-radius: 5px;
-}
-.sobremi .fila .col .contenedor-intereses{
-    display: flex;
-    flex-wrap: wrap;
 }
 
-.sobremi .fila .col .contenedor-intereses .interes{
-    width: 100px;
-    height: 100px;
-    background-color: #252A2E;
-    border-radius: 10px;
-    margin: 0 15px 15px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: .3s;
-
-}.sobremi .fila .col .contenedor-intereses .interes:hover{
-    background-color: #1CB698;
-}
-.sobremi .fila .col .contenedor-intereses .interes i{
-    font-size: 30px;
-    margin-bottom: 10px;
-}
 .sobremi button{
     cursor: pointer;
     background-color: transparent;
@@ -244,23 +192,33 @@ html{
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
+    margin-bottom: 30PX;
 }
 .skills .fila{
     display: flex;
+    flex-wrap: wrap;
+    
+    
 }
 .skills .fila .col{
     width: 50%;
     padding: 0 20px;
+    
+    
 }
 .skills .fila .col h3{
     font-size: 28px;
     font-family: 'Righteous';
     margin-bottom: 25px;
+    text-align: center;
+    
 }
 .skills .skill > span{
     font-weight: bold;
     display: block;
     margin-bottom: 10px;
+    margin-left: 60px;
+    
 }
 .skills .skill .barra-skill{
     height: 8px;
@@ -268,6 +226,8 @@ html{
     background-color: #131517;
     position: relative;
     margin-bottom: 30px;
+    margin-left: 60px;
+    
 }
 .skills .skill .progreso{
     background-color: #1CB698;
@@ -276,6 +236,7 @@ html{
     left: 0;
     height: 8px;
     transition: width 0.5s ease-in-out;
+    
 }
 .skills .skill .barra-skill span{
     position: absolute;
@@ -288,6 +249,8 @@ html{
     top: -17px;
     right: -15px;
     font-size: 14px;
+    
+    
 }
 
 .prueba {
@@ -304,6 +267,7 @@ html{
     cursor: pointer;
     position: relative;
     grid-template-columns: repeat(4,minmax(0,1fr));
+
 }
 
 .prueba:hover::before {
@@ -326,11 +290,9 @@ html{
 }
 
 .col-item {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+    width: 25%;
+    box-sizing: border-box;
+    
   }
 
 /* Estas clases se agregaran dinamicamente mediante javascript */
@@ -630,4 +592,25 @@ footer .arriba{
     .contacto .fila .col{
         width: 100%;
     }
+}
+
+/* SCROLL */
+
+/* Estilos para el track del scrollbar */
+::-webkit-scrollbar {
+    width: 8px; /* Ancho del scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Color del track */
+}
+
+/* Estilos para el thumb del scrollbar */
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color del thumb */
+    border-radius: 4px; /* Radio del borde del thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Color del thumb al pasar el cursor */
 }
