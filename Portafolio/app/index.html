@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
@@ -122,35 +123,25 @@
         </div>
       </div>
     </section>
-
+  
     <div id="formulario" class="oculto tarjeta-formulario">
-      <!-- Aquí coloca el formulario de contacto 
-        SECCION CONTACTO  -->
       <section id="contacto" class="contacto">
-        <div class="contenido-seccion">
-          <h2>CONTACTO</h2>
-          <div class="fila">
-            <!-- Formulario  -->
-            <div class="col">
-              <input type="text" placeholder="Nombre" />
-              <input type="text" placeholder="Dirección de correo" />
-              <textarea
-                name=""
-                id=""
-                cols="30"
-                rows="10"
-                placeholder="Mensaje"
-              ></textarea>
-              <button>
-                Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
-                <span class="overlay"></span>
-              </button>
-            </div>
+          <div class="contenido-seccion">
+              <h2>CONTACTO</h2>
+              <div class="fila">
+                  <div class="col">
+                      <form action="/enviar" method="post">
+                          <input type="text" name="nombre" placeholder="Nombre" />
+                          <input type="text" name="correo" placeholder="Dirección de correo" />
+                          <textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                          <button type="submit">Enviar Mensaje <i class="fa-solid fa-paper-plane"></i></button>
+                      </form>
+                  </div>
+              </div>
           </div>
-        </div>
-        <div id="cerrarFormulario" class="boton-cerrar">X</div>
+          <div id="cerrarFormulario" class="boton-cerrar">X</div>
       </section>
-    </div>
+  </div>
 
     <!-- SECCION SKILLS -->
     <section class="skills" id="skills">
