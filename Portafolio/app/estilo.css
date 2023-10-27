@@ -625,7 +625,7 @@ footer .arriba{
         padding: 10px 0;
     }
 }
-@media screen and (max-width:700px){
+/* @media screen and (max-width:700px){
     .sobremi .fila{
         display: block;
     }
@@ -669,7 +669,49 @@ footer .arriba{
     .contacto .fila .col{
         width: 100%;
     }
+}*/
+
+@media screen and (max-width: 768px) {
+    .fila {
+        flex-direction: column; 
+        margin: 0 auto;
+        justify-content: center; /* Centrar horizontalmente */
+        align-items: center; /* Centrar verticalmente */
+    }
+
+    span {
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; 
+    }
+
+    .prueba {
+        display: block;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    }
+
+    body, html {
+        margin: 0;
+        padding: 0;
+    }
+
+    .contenedor-header .inicio .sobremi .skill .skills .col .col-item .barra-skill {
+        width: 100%;
+        display: block;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+        text-align: center; 
+    }
+
+    
+
+    
+
 }
+
+
 
 /* SCROLL */
 
