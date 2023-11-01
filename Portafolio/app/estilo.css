@@ -568,6 +568,7 @@ html{
   /* Estilo para el botón de cierre */
   .boton-cerrar {
     position: absolute;
+    width: 100%;
     top: 5px;
     right: 10px;
     cursor: pointer;
@@ -668,12 +669,10 @@ footer .arriba{
     .contacto .fila{
         display: block;
     }
-    .contacto .fila .col{
-        width: 100%;
     }
 }*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 700px) {
     .fila {
         flex-direction: column; 
         margin: 0 auto;
@@ -688,22 +687,13 @@ footer .arriba{
         flex-direction: column; 
     }
 
-    .prueba {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-        text-align: center;
-    }
-
     body, html {
         margin: 0;
         padding: 0;
-        max-width: 100%;
     }
 
-    .contenedor-header .inicio .sobremi .skill .skills .col .col-item .barra-skill {
+    .contenedor-header .inicio .sobremi .skill .skills .col .col-item .barra-skill .contacto .fila .col  {
         width: 100%;
-        display: block;
-        flex-direction: column;
         justify-content: center; 
         align-items: center; 
         text-align: center; 
@@ -715,10 +705,6 @@ footer .arriba{
         align-items: center; 
         text-align: center;
     }
-
-    
-
-    
 
 }
 
