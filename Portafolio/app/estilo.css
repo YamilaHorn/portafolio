@@ -396,6 +396,69 @@ html{
     100%{width: 70%;}
 }
 /* SECCION PORTFOLIO */
+
+.project-card {
+    background-color: rgb(255, 255, 255, 0.6); /* Color de fondo de cada tarjeta de proyecto */
+    border: 1px solid #ddd; /* Borde de las tarjetas */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno de las tarjetas */
+    margin: 10px; /* Espaciado entre tarjetas */
+    box-shadow: 0 2px 4px rgb(255, 255, 255); /* Sombra de las tarjetas */
+    width: 70%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .project-card img {
+    max-width: 40%;
+    border-radius: 8px;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+    color: #fff; /* Color del texto en el overlay */
+    position: absolute; /* Establecer la posición a absolute para que el overlay sea fijo */
+    top: 0;
+    right: -100%; /* Desplazar el overlay fuera de la tarjeta */
+    width: 100%; /* Ancho del overlay */
+    height: 100%; /* Altura del overlay */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.8s;
+    cursor: pointer;
+  }
+  
+  .project-card:hover .overlay {
+    right: 0;
+    opacity: 1; /* Muestra el overlay al pasar el cursor sobre la tarjeta */
+  }
+  
+  .project-card h3 {
+    font-size: 24px; /* Tamaño de fuente del título del proyecto */
+    font-weight: bold; /* Peso de fuente en negrita */
+    margin: 10px 0; /* Espaciado superior e inferior del título */
+  }
+  
+  .project-description {
+    font-size: 16px; /* Tamaño de fuente de la descripción del proyecto */
+  }
+
+  .custom-github-icon {
+    font-size: 24px; /* Ajusta el tamaño del ícono según tus preferencias */
+  }
+  
+  .project-link {
+    text-decoration: none; /* Sin subrayado en el enlace */
+    color: #007bff; /* Color del enlace */
+    margin-top: 10px; /* Espaciado superior del enlace */
+  }
+  
+  .project-link:hover {
+    text-decoration: underline; /* Subrayar el enlace al pasar el cursor */
+  }
+
 .portfolio{
     background-color: #252A2E;
     color: #fff;
@@ -416,42 +479,10 @@ html{
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.portfolio .galeria .proyecto{
-    position: relative;
-    max-width: 340px;
-    height: fit-content;
-    margin: 10px;
-    cursor: pointer;
-}
-.portfolio .galeria .proyecto img{
-    width: 100%;
-    display: block;
-}
-.portfolio .galeria .proyecto .overlay{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    background: linear-gradient(rgba(28,182,152,.8), rgba(28,182,152,.8));
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: 1s;
-    font-size: 18px;
-    letter-spacing: 3px;
-    opacity: 0;
-}
-.portfolio .galeria .proyecto .overlay h3{
-    margin-bottom: 20px;
-    transition: 1s;
-}
-.portfolio .galeria .proyecto .overlay:hover{
-    opacity: 1;
-}
-.portfolio .galeria .proyecto .overlay:hover h3{
-    margin-bottom: 0px;
-}
+
+
+
+
 /* SECCION CONTACTO */
 
 .contacto .tarjeta-formulario{
