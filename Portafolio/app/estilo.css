@@ -398,20 +398,42 @@ html{
 /* SECCION PORTFOLIO */
 
 .project-card {
-    background-color: rgb(255, 255, 255, 0.6); /* Color de fondo de cada tarjeta de proyecto */
+    background-color: rgb(255, 255, 255, 0.5); /* Color de fondo de cada tarjeta de proyecto */
     border: 1px solid #ddd; /* Borde de las tarjetas */
+    box-shadow: 0 2px 4px #1CB698;
     border-radius: 5px; /* Bordes redondeados */
-    padding: 20px; /* Espaciado interno de las tarjetas */
+    padding: 10px; /* Espaciado interno de las tarjetas */
     margin: 10px; /* Espaciado entre tarjetas */
     box-shadow: 0 2px 4px rgb(255, 255, 255); /* Sombra de las tarjetas */
     width: 70%;
     overflow: hidden;
     position: relative;
+    display: flex;
+    align-items: center;
   }
 
   .project-card img {
     max-width: 40%;
     border-radius: 8px;
+    box-shadow: 0 2px 4px #1CB698;
+  }
+
+  .project-description {
+    font-size: 16px;
+    margin-top: 3px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    font: 20px;
+    
+  }
+
+  .description-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 10px;
   }
   
   .overlay {
@@ -440,27 +462,40 @@ html{
     font-weight: bold; /* Peso de fuente en negrita */
     margin: 10px 0; /* Espaciado superior e inferior del título */
   }
-  
-  .project-description {
-    font-size: 16px; /* Tamaño de fuente de la descripción del proyecto */
-  }
 
   .custom-github-icon {
     font-size: 24px; /* Ajusta el tamaño del ícono según tus preferencias */
-  }
-  
-  .project-link {
-    text-decoration: none; /* Sin subrayado en el enlace */
-    color: #007bff; /* Color del enlace */
-    margin-top: 10px; /* Espaciado superior del enlace */
-  }
-  
-  .project-link:hover {
-    text-decoration: underline; /* Subrayar el enlace al pasar el cursor */
+    color: #1CB698;
   }
 
+  .project-technologies {
+    display: block;
+  }
+  
+  .project-technologies span {
+    background-color: #1CB698;
+    box-shadow: 0 2px 4px rgb(255, 255, 255);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-right: 5px; 
+    margin-bottom: 5px; 
+    margin-top: 15px;
+    margin-left: 25px;
+  }
+
+  .project-description span {
+    color: #1e2326; 
+    font-weight: bold;
+    font: 30px;
+    font-family: 'Righteous';
+  }
+
+  
+  
 .portfolio{
-    background-color: #252A2E;
+    background-color: #1e2326;
     color: #fff;
     padding: 50px 20px;
 }
